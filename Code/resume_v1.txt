@@ -1,0 +1,161 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome} % For social media icons
+\usepackage{amssymb} % for \checkmark
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\newcommand{\highlightTitle}[1]{\textcolor{BrickRed}{\textbf{#1}}}
+\newcommand{\greenCheckmark}{\textcolor{ForestGreen}{\checkmark}\hspace{0.15em}}
+
+\newcommand{\sectionWithColorBox}[1]{
+  \vspace{5pt}
+  \colorbox{yellow!20}{\parbox{\dimexpr\linewidth-2\fboxsep}{\textbf{\textcolor{BrickRed}{\uppercase{#1}}}}}
+  \vspace{3pt}
+}
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item[\greenCheckmark]\small{{#1 \vspace{-2pt}}}}
+
+% Modified \resumeSubheading without checkmark at start
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \highlightTitle{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*, label=\greenCheckmark]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+\vspace{-11pt}
+{\Huge \scshape \textbf{Rushikesh Kamble}} \\ \vspace{1pt}
+\footnotesize
+\faPhone\ +91 8310912579 \hspace{1em}
+\faEnvelope\ \href{mailto:kamblerushikesh8310@gmail.com}{kamblerushikesh8310@gmail.com} \hspace{1em}
+\faMapMarker\ \href{https://maps.app.goo.gl/f3AT6vLZU2imRdUc7}{Hanchinal, karnataka} \hspace{1em}
+\faLinkedinSquare\ \href{https://www.linkedin.com/in/rushikesh-kamble-836215220/}{LinkedIn} \hspace{1em}
+\faGithubSquare\ \href{https://github.com/Embedded-Developer-Rushikesh}{GitHub} \hspace{1em}
+\faYoutubeSquare\ \href{https://www.youtube.com/@Rushikesh8310}{YouTube}
+\end{center}
+
+
+
+
+\sectionWithColorBox{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Information Technology, Bhopal}{Madhya Pradesh}
+      {\href{https://drive.google.com/file/d/1mcE4bLygpMBHJ08DSlPE_BAXsP2-K7iG/view?usp=sharing}{\faGraduationCap~\faFilePdf~B.Tech. in Electronics \& Communication Engineering} | CGPA: 8.57/10}
+      {Nov 2020 - July 2024}
+  \resumeSubHeadingListEnd
+
+
+\vspace{4pt}
+\noindent
+\textit{Passionate about C, Rust, ARM Cortex-Mx and RISC-V Processor Architecture with strong foundation in Data Structures, Algorithms in C/C++, and Embedded OS (RTOS), Quantum Leap, DSP along with hands on experience in graphic Library LVGL.}
+\vspace{6pt}
+
+\sectionWithColorBox{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {NexiGO Energy | Embedded Firmware Engineer (Full-time)}{Jun 2024 - Mar 2025}
+      {Hydrabad, India}{}
+      \resumeItemListStart
+        \resumeItem{designed and Implemented NexiGo Charger Firmware from scratch using QP Farmwork, utilizing non preemptive QV Kernal for 
+Scheduling the active objects AO’s.}
+        \resumeItem{wrote a custom CAN Protocol for NexiGo BMS to unable vehicle and charger Integration, and tested it using BUSMASTER with SIL and 
+HIL.}
+        \resumeItem{Performed code cleanup using MISRA-C guidelines and collaborated with software team via Git/GitHub.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IISc Bangalore, CPDM | Embedded Firmware Intern}{Oct 2023 - Dec 2023}
+      {Bengaluru, India}{}
+      \resumeItemListStart
+        \resumeItem{Developed HAL Framework for Loadcell Amplifier, pH Sensor, CO2 Sensor, and Flow Sensor for Life Box.}
+        \resumeItem{Documented Hardware architecture, Software Architecture, State Machine diagram for INSUFLO.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {EV URJAA Private Limited | Embedded Firmware Intern}{Jun 2023 - Aug 2023}
+      {Indore, India}{}
+      \resumeItemListStart
+        \resumeItem{Implemented the GPS algorithm for the NUCLEUS Device for distance calculation.}
+        \resumeItem{Designed the I2C and CAN-SPI framework for USMA(MCP98010) and CAN IC(MCP2515). }
+        \resumeItem{Wrote AT command parser for A7672 SIMCOM using UART.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\sectionWithColorBox{Projects}
+  \resumeSubHeadingListStart
+    \resumeItemListStart
+      \resumeItem{\href{https://github.com/Embedded-Developer-Rushikesh/STM32-Driver-Layer}{\faGithub~\highlightTitle{STM32 Driver Layer (STM32F446RE-NUCLEO)}} – GPIO, UART, SPI, I2C drivers from scratch.}
+      \resumeItem{\href{https://github.com/Embedded-Developer-Rushikesh/Real-Time-OS-RTOS-/tree/Round_Robin_Schedular}{\faGithub~\highlightTitle{Round-Robin Scheduler – ARM-Cortex-Mx}} – PendSV, inline assembly, memory allocation.}
+      \resumeItem{\href{https://github.com/Embedded-Developer-Rushikesh/Linker-Script-and-Startup-code}{\faGithub~\highlightTitle{Makefile, Linker, and Startup Code from Scratch}} – SWD, ITM, Arm-Toolchain}
+      \resumeItem{\href{https://github.com/Embedded-Developer-Rushikesh/Quantum-Leaps/tree/QActive_Led_Control}{\faGithub~\highlightTitle{LED Control with QP Framework}} – AO, HSM, QV Kernel.}
+      \resumeItem{\href{https://github.com/Embedded-Developer-Rushikesh/uart-Custum-Bootloader-}{\faGithub~\highlightTitle{UART-Based Custom Bootloader}} – flash write/erase, secure update.}
+      \resumeItem{\href{https://github.com/Embedded-Developer-Rushikesh/Embedded-Memory-Security/tree/MPU-StackOverFlow}{\faGithub~\highlightTitle{MPU Stack Overflow Detection}} – memory protection using MPU/Fault handlers.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\sectionWithColorBox{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}: C (Strong), Rust, C++, Python (Basic), Inline Assembly \\
+     \textbf{Tools}: STM32Cube/MX, Keil, Eclipse, QM Tool, Logic Analyzer, Spider, Visual Studio Code \\
+     \textbf{Boards}: RA7FA2L1AB, RA7FA4M2AC, NUCLEO-L476RG,
+TM4C123GXL, STM32F103C8T6, GD32F1003 \\
+     \textbf{Protocols/Peripherals}: UART, SPI, I2C, CAN, GPIO, ADC, TIMER, DMA, Clock Configuration PLL/HSI/HSE \\
+     \textbf{Other}: Git, GitHub, MISRA-C, RTOS , JTAG, OpenOCD, QP Framework, Graphic Library LVGL, ST-Link
+    }}
+ \end{itemize}
+
+\sectionWithColorBox{Achievements}
+  \resumeSubHeadingListStart
+    \resumeItemListStart
+      \resumeItem{Presented Tiny ML Seminar at IIT Kanpur – Linear Regression, SVM, KNN, CNN.}
+      \resumeItem{Launched YouTube channel "Embedded Galaxy" .}
+      \resumeItem{Solved 250+ DSA problems on GFG, LeetCode, Coding Ninja.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
